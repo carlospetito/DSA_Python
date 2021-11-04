@@ -1,0 +1,40 @@
+print("\n******************* Python Calculator *******************")
+
+
+def soma(n1, n2):
+    return n1 + n2
+
+
+def subt(n1, n2):
+    return n1 - n2
+
+
+def mult(n1, n2):
+    return n1 * n2
+
+
+def divi(n1, n2):
+    return n1 / n2
+
+
+print("Selecione o numero da equação desejada")
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+
+operacao = int(input("Digite sua opção (1/2/3/4): "))
+
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+if operacao == 1:
+    print(f"{num1} + {num2} = {soma(num1, num2)}")
+elif operacao == 2:
+    print(f"{num1} - {num2} = {subt(num1, num2)}")
+elif operacao == 3:
+    print(f"{num1} x {num2} = {mult(num1, num2)}")
+elif operacao == 4:
+    print(f"{num1} / {num2} = {divi(num1, num2)}")
+else:
+    print("A opção não é valida")
